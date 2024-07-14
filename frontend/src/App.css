@@ -1,0 +1,245 @@
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  .hhh {
+    margin-top: 10px;
+  }
+  .smallAddtoCart p:nth-child(3) {
+    display: none;
+  }
+  .smallAddtoCart p {
+    font-weight: normal;
+  }
+  .regestration {
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .Reg {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  .Home .content h1 {
+    font-size: 45px;
+  }
+  .contact .content h3 {
+    font-size: 17px;
+  }
+  .contact .content h5 {
+    font-size: 15px;
+  }
+  .errorImg {
+    width: 80%;
+  }
+  .errorImg h1 {
+    font-size: 3rem;
+  }
+  .errorImg h2 {
+    font-size: 1rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+/* Contact Section */
+.contact {
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282c34;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content p, 
+.contact .content h3,
+.contact .content h5 {
+  color: #fff;
+}
+
+/* Home Section */
+.Home, .greeting {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./components/about1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.Home .content h1 {
+  font-weight: 700;
+  font-size: 70px;
+}
+.Home .content h3, .Home .content h5 {
+  opacity: 0.7;
+}
+
+/* Registration Section */
+.regestration {
+  border-radius: 7px;
+  width: 40%;
+  background-color: whitesmoke;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.regestration span {
+  font-weight: 600;
+  font-size: 20px;
+}
+.regestration input, .regestration select {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgb(66, 66, 66);
+  padding-left: 15px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.regestration input:focus, .regestration select:focus {
+  border: 2px solid #9b59b6;
+  box-shadow: none;
+}
+.regestration .Title {
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 23px;
+}
+.regestration .Title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 95px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.regestration button {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  transition: background 0.3s ease;
+}
+.regestration button:hover {
+  background: #563434;
+  cursor: pointer;
+}
+.links {
+  text-decoration: none;
+  font-weight: 600;
+}
+.Login {
+  width: 25%;
+}
+.formBtn {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  width: 30%;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+/* Registration Container */
+.Reg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./components/reg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+  text-align: center;
+}
+.footer a {
+  color: #8a8a8a;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Error Section */
+.errorBox {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./components/reg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.errorImg {
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  background: whitesmoke;
+}
+.errorImg h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+.errorImg h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.BTN:focus {
+  outline: none;
+}
+
+/* Button Styles */
+.BTN {
+  transition: 0.5s;
+  border-radius: 30px;
+  color: white;
+  background: #ff523b;
+  outline: none;
+  border: none;
+  padding: 6px 25px;
+}
+.BTN:hover {
+  background: #563434;
+  color: white;
+}
+
+/* List Group */
+.list-group li {
+  background: wheat;
+}
