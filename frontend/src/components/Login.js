@@ -12,7 +12,7 @@ import ShopContext from '../context/ShopContext'   // importing context file
 
 
 // const host = "http://localhost:4000";
-const host="https://urban-bazzar-backend.onrender.com/"
+const host="https://urban-bazzar-backend.onrender.com"
 
 export default function Login() {
     const context = useContext(ShopContext); // for using useContext states and functions 
