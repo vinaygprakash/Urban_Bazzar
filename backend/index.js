@@ -9,7 +9,7 @@ const connectToMongo = require("./db/connection");
 
 // Configure CORS
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://fashioncollections.netlify.app', 'https://frontendvinay-mtvll953m-vinay-prakashs-projects.vercel.app'],
+  origin: [ 'https://urban-bazzar-frontend.vercel.app', 'http://localhost:3000'],
   credentials: true,
 }));
 
