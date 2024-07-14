@@ -9,8 +9,8 @@ import { useNavigate } from "react-router";
 import { useContext } from "react";
 import ShopContext from "../context/ShopContext";
 import ScrollBtn from './ScrollBtn';
-// const host = "https://urbanbazzar-backend.onrender.com/";
-const host = "http://localhost:4000";
+const host="https://urban-bazzar-backend.onrender.com/"
+// const host = "http://localhost:4000";
 
 
 const AddToCart = () => {

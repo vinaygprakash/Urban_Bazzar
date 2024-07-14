@@ -8,6 +8,7 @@ import ShopContext from "../context/ShopContext";
 import ScrollBtn from './ScrollBtn';
 import Product from "./Product";
 // const host = "http://localhost:5000";
+const host = "https://urban-bazzar-backend.onrender.com";
 
 const AddToCart = () => {
     const context = useContext(ShopContext);

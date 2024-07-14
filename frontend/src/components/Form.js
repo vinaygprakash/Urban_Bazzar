@@ -1,8 +1,8 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import { useState } from 'react'
-const host = "http://localhost:4000/api/regester";
-// const hoat = "https://urbanbazzar-backend.onrender.com/api/regester";
+// const host = "http://localhost:4000/api/regester";
+const host = "https://urban-bazzar-backend.onrender.com/api/regester";
 
 export default function Login() {
     const navigate = useNavigate();

@@ -16,9 +16,9 @@ export default function Footer() {
     const onsubmitfun = async (event) => {
         try {
             event.preventDefault();
-            // let url = 'https://urbanbazzar-backend.onrender.com/';
-            const url = "http://localhost:4000/api/user/feedback";
-            // const url = "https://urbanbazzar-backend.onrender.com/api/user/feedback";
+           
+            // const url = "http://localhost:4000/api/user/feedback";
+            const url="https://urban-bazzar-backend.onrender.com/api/user/feedback";
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {

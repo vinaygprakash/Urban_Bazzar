@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router';
 import ShopContext from '../context/ShopContext';
 
 
-const host = "http://localhost:4000";
-// const host = "https://urbanbazzar-backend.onrender.com";
+// const host = "http://localhost:4000";
+const host = "https://urban-bazzar-backend.onrender.com";
 
 export default function Product(props) {
     const navigate = useNavigate();

@@ -10,7 +10,7 @@ import ShopContext from '../context/ShopContext';
 import ScrollBtn from './ScrollBtn';
 
 // const host = "http://localhost:4000/api/user/regester";
-const host = "https://urbanbazzar-backend.onrender.com/api/user/regester";
+const host = "https://urban-bazzar-backend.onrender.com/api/user/regester";
 
 const Regester = () => {
     const context = useContext(ShopContext);

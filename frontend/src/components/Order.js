@@ -9,8 +9,8 @@ import Alert from './Alert';
 import ScrollBtn from './ScrollBtn';
 import ShopContext from '../context/ShopContext';
 
-const host = "http://localhost:4000/api/placeorder/order";
-// const host = "https://urbanbazzar-backend.onrender.com/api/placeorder/order";
+// const host = "http://localhost:4000/api/placeorder/order";
+const host = "https://urban-bazzar-backend.onrender.com/api/placeorder/order";
 
 const Regester = () => {
     const navigate = useNavigate();
