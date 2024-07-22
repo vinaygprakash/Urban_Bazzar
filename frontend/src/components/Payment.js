@@ -24,7 +24,7 @@ const Payment = () => {
   };
 
   const createOrder = async () => {
-    const res = await fetch('http://localhost:4000/api/placeorder/create-order', {
+    const res = await fetch('https://urban-bazzar-backend.onrender.com/api/placeorder/create-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
