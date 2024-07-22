@@ -1,8 +1,8 @@
 import ShopContext from "./ShopContext";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-// const host = "http://localhost:4000";
-const host = "https://urban-bazzar-backend.onrender.com";
+const host = "http://localhost:4000";
+// const host = "https://urban-bazzar-backend.onrender.com";
 
 const ShopStateContext = (props) => {
     const navigate = useNavigate();

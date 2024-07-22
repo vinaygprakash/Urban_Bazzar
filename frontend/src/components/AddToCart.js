@@ -1,17 +1,15 @@
 import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Navbar from "./Navbar";
 import Footer from './Footer';
 import Alert from "./Alert";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router";
-import { useContext } from "react";
 import ShopContext from "../context/ShopContext";
 import ScrollBtn from './ScrollBtn';
-const host="https://urban-bazzar-backend.onrender.com"
-// const host = "http://localhost:4000";
 
+// const host = "http://localhost:4000";
+const host="https://urban-bazzar-backend.onrender.com";
 
 const AddToCart = () => {
     const context = useContext(ShopContext);
@@ -65,7 +63,7 @@ const AddToCart = () => {
             <div className="container pb-4 text-center">
                 <button className="temp">My Cart</button>
 
-                {items == 0 ? <div className="row my-4 py-3 mx-auto" style={{ textAlign: 'center', color: 'black' }}>
+                {items.length === 0 ? <div className="row my-4 py-3 mx-auto" style={{ textAlign: 'center', color: 'black' }}>
                     <h1>Your cart is empty!</h1>
                     <p>Add items to it now</p>
                     <Link to="/gallery"><button className="BTN">Shop now</button></Link>
@@ -93,10 +91,10 @@ const AddToCart = () => {
                         )
                     })
                 }
-                {items != 0 ? <div className="row my-4 py-3 mx-auto" style={{width:'65%',textAlign: 'center',color:'white'}}>
+                {items.length !== 0 ? <div className="row my-4 py-3 mx-auto" style={{width:'65%',textAlign: 'center',color:'white'}}>
                     <h4 className="card-text my-auto" style={{ 'fontWeight': 'bolder',color:'black' }}>Total<i className="fas fa-rupee-sign" style={{ marginLeft: '25px' }}></i>{total}</h4>
                     <hr />
-                    <div className="col-md-4"><button className="BTN"><Link style={{ "color": "white", "fontWeight": "800", textDecoration: 'none' }} to={`/order`}>Order Now</Link></button></div>
+                    <div className="col-md-4"><button className="BTN"><Link style={{ "color": "white", "fontWeight": "800", textDecoration: 'none' }} to="/order">Order Now</Link></button></div>
                     <div className="col-md-4 hhh"><button className="BTN" style={{ "color": "white", "fontWeight": "800", textDecoration: 'none' }} onClick={() => { removeAllitemsfun() }}>Clear Cart</button></div>
                     <div className="col-md-4 hhh"><button className="BTN" style={{ "color": "white", "fontWeight": "800", textDecoration: 'none' }} onClick={() => { navigate('/gallery') }}>Shop</button></div>
                 </div> : ''}

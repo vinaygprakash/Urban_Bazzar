@@ -51,9 +51,7 @@ const Regester = () => {
             setalertMessage(json.message);
             alertShowfun();
             removeAllitemsfun();
-            setTimeout(() => {
-                navigate('/afterOrder')
-            }, 1000);
+            navigate('/payment')
             console.log('congratulation order placed ho gya');
             setUser({ name: '', mobile: '', pincode: '', state: '', address: '' });
         } else {
@@ -103,6 +101,7 @@ const Regester = () => {
                                 </div>
                                 <div className="col-md-12">
                                     <button type="submit" name="signup" value="regester" className="btn">CONFIRM ORDER</button>
+                                   
                                 </div>
                                 <div className="row">
                                     <NavLink to="/addToCart" style={{ textDecoration: 'none', fontWeight: 'bold', textAlign: 'center' }}>Return to cart</NavLink>

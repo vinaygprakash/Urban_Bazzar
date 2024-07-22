@@ -28,7 +28,6 @@ const App = () => {
           <Route path='/error' element={<Error first={'401-Unauthorized'} second={'Authorization Required-Access is allowed only for registered users'} />} />
           <Route path='/payment' element={<Payment />} />
           <Route path='/order' element={<Order />} />
-          <Route path='/afterOrder' element={<PlacedOrder />} />          
           <Route path='/account' element={<Account />} />          
           <Route path='/updateAcc' element={<UpdateAcc />} />          
           <Route path='/myorder' element={<OrderHistory />} />          

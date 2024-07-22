@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router();
 const fetchuser = require('../middleware/fetchuser');
+const razorpayInstance=require('../utils/razorpayutils');
 
 const order = require('../models/Order');
 
@@ -43,3 +44,21 @@ router.post('/fetchallorder', fetchuser ,async (req, res) => {
 );
 
 module.exports = router;
+
+//Route :- for razorpay payment gateway
+router.post('/create-order', async (req, res) => {
+    const amount = req.body.amount * 100; // Convert to smallest currency unit, e.g., paisa for INR
+    try {
+        const options = {
+            amount: amount,
+            currency: "INR",
+            receipt: "order_rcptid_" + new Date().getTime()
+        };
+        const order = await razorpayInstance.orders.create(options);
+        res.json(order);
+    } catch (error) {
+        console.log(error);
+        res.status(500).send("Something went wrong");
+    }
+});
+
